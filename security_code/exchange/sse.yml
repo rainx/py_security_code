@@ -1,0 +1,330 @@
+
+#
+# list: http://www.sse.com.cn/lawandrules/sserules/trading/universal/
+# news: http://www.sse.com.cn/lawandrules/sserules/trading/universal/c/c_20150906_3976418.shtml
+# download ->
+#   2009: http://www.sse.com.cn/lawandrules/sserules/trading/universal/a/20150906/8c8ff39ac7a762096b6a83ad34e30527.doc
+#         https://biz.sse.com.cn/cs/zhs/xxfw/flgz/rules/sserules/sseruler20090810a.pdf
+#
+# All Fix
+# http://www.sse.com.cn/home/search/?webswd=%E4%BB%A3%E7%A0%81%E6%AE%B5
+#
+
+digit_1 :
+  '0' :
+    name : '国债／指数'
+  '1' :
+    name : '债券'
+  '2' :
+    name : '回购'
+  '3' :
+    name : '期货'
+  '4' :
+    name : '备用'
+  '5' :
+    name : '基金／权证'
+  '6' :
+    name : 'A股'
+  '7' :
+    name : '非交易业务（发行、权益分配）'
+  '8' :
+    name : '备用'
+  '9' :
+    name : 'B股'
+
+
+digit_1to3 :
+  '000' :
+    name : '上证指数、沪深300指数、中证指数'
+  '009' :
+    name : '国债(2000年前发行)'
+  '010' :
+    name : '国债（2000年-2009年发行）'
+  '019' :
+    name : '固定收益电子平台交易国债'
+  '020' :
+    name : '记账式贴现国债'
+  '090' :
+    name : '新国债质押式回购质押券出入库（对应010***国债）'
+  '099' :
+    name : '新国债质押式回购质押券出入库（对应009***国债）'
+
+  '100' :
+    name : '可转债（对应600***)，其中1009**用于转债回售'
+  '102' :
+    name : '公司债券质押券出入库'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986121.shtml'
+  '103' :
+    name : '质押式回购交易中的公司债券质押券出入库'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986116.shtml'
+  '104' :
+    name : '公司债及国家发改委等核准发行的、登记在证券账户的债券（对应122***)出入库'
+  '105' :
+    name : '105000-105899用于分离债（对应126***)出入库， 105900-105999用于企业债（120***、129***）出入库'
+  '106' :
+    name : '地方政府债出入库（对应130***)'
+  '107' :
+    name : '记账式贴现国债出入库（对应020***)'
+  '110' :
+    name : '可转债（对应600***)'
+  '112' :
+    name : '可转债（对应600***)'
+  '113' :
+    name : '可转债（对应601***)'
+  '120' :
+    name : '企业债'
+  '121' :
+    name : '资产证券化'
+  '122' :
+    name : '122000-122499用于公司债，122500-122999用于国家发改委等核准发行的、登记在证券账户的债券'
+  '123' :
+    name : '公司债券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986115.shtmls'
+  '124' :
+    name : '公司债券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986116.shtml'
+  '125' :
+    name : '中小企业私募债券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986119.shtml'
+  '126' :
+    name : '分离交易的可转换公司债'
+  '127' :
+    name : '公司债券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986121.shtml'
+  '128' :
+    name : '可交换公司债'
+  '129' :
+    name : '企业债'
+  '128' :
+    name : '信贷资产支持'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986120.shtml'
+  '130' :
+    name : '地方政府债'
+  '131' :
+    name : '资产支持证券挂牌转让'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160115_4036449.shtml'
+  '132' :
+    name : '可交换公司债券交易'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986125.shtml'
+  '133' :
+    name : '可交换公司债券质押券出入库'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986125.shtml'
+  '135' :
+    name : '证券公司短期债券挂牌转让 (135000-135499),并购重组私募债券挂牌转让 (135500-135999)'
+    url :
+      - 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986123.shtml'
+      - 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986124.shtml'
+  '136' :
+    name : '公开发行公司债券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986129.shtml'
+  '137' :
+    name : '可交换私募债券现券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20151021_4001096.shtml'
+  '139' :
+    name : '企业债券挂牌转让'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160322_4062037.shtml'
+  '138' :
+    name : '可交换私募债券换股'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160530_4121719.shtml'
+  '140' :
+    name : '地方政府债券现券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160517_4115171.shtml'
+  '142' :
+    name : '资产支持证券挂牌转让'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160901_4172528.shtml'
+  '143' :
+    name : '公开发行公司债券现券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160922_4180617.shtml'
+  '144' :
+    name : '公开发行公司债券出入库'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160922_4180617.shtml'
+  '145' :
+    name : '非公开发行公司债券现券挂牌转让'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160922_4180617.shtml'
+  '146' :
+    name : '资产支持证券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170419_4278011.shtml'
+  '147' :
+    name : '地方政府债券现券'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170726_4349248.shtml'
+  '148' :
+    name : '地方政府债券质押券出入库'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170726_4349248.shtml'
+  '181' :
+    name : '可转债转股（对应600***），已不再增用'
+  '182' :
+    name : '债券回售'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170313_4248820.shtml'
+  '190' :
+    name : '可转债转股（对应600***）'
+  '191' :
+    name : '可转债转股（对应601***）'
+  '192' :
+    name : '可交换公司债转股（对应128***）,可交换公司债券换股'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986125.shtml'
+  '201' :
+    name : '国债回购（席位托管方式）'
+  '202' :
+    name : '企业债回购'
+  '203' :
+    name : '国债买断式回购'
+  '204' :
+    name : '债券质押式回购（账户托管方式）'
+  '205' :
+    name : '债券质押式报价回购'
+  '206' :
+    name : '债券质押式协议回购交易'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986126.shtml'
+
+  '310' :
+    name : '国债期货（暂停交易）'
+  '330' :
+    name : '公开发行优先股'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '360' :
+    name : '非公开发行优先股转让'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '500' :
+    name : '契约型封闭式基金'
+  '501' :
+    name : '上市开放式基金'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986128.shtml'
+  '510' :
+    name : '交易型开放式指数证券投资基金'
+  '511' :
+    name : '交易型货币市场基金、债券ETF等上市交易的固定收益类基金产品'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986118.shtml'
+  '519' :
+    name : '开放式基金申赎'
+  '521' :
+    name : '开放式基金认购'
+  '522' :
+    name : '开放式基金跨市场转托管'
+  '523' :
+    name : '开放式基金分红'
+  '524' :
+    name : '开放式基金基金转换'
+  '580' :
+    name : '权证(含股改权证、公司权证)'
+  '582' :
+    name : '权证行权'
+
+  '600' :
+    name : 'A股证券'
+  '603' :
+    name : 'A股证券'
+    url : 'http://www.sse.com.cn/disclosure/announcement/general/c/c_20150910_3979056.shtml'
+  '610' :
+    name : 'A股证券'
+
+  '700' :
+    name : '配股（对应600***）'
+  '702' :
+    name : '职工股配股（对应600***）'
+  '704' :
+    name : '持股配债'
+  '705' :
+    name : '基金扩募'
+  '706' :
+    name : '要约收购'
+  '730' :
+    name : '申购、增发（对应600***）'
+  '731' :
+    name : '持股增发（对应600***）'
+  '732' :
+    name : 'A股申购'
+    url : 'http://www.sse.com.cn/disclosure/announcement/general/c/c_20150910_3979056.shtml'
+  '733' :
+    name : '可转债申购（对应600***）'
+  '734' :
+    name : 'A股申购款'
+    url : 'http://www.sse.com.cn/disclosure/announcement/general/c/c_20150910_3979056.shtml'
+  '735' :
+    name : '基金申购'
+  '736' :
+    name : 'A股申购配号'
+    url : 'http://www.sse.com.cn/disclosure/announcement/general/c/c_20150910_3979056.shtml'
+  '738' :
+    name : '网上投票(对应600***)'
+  '740' :
+    name : '申购款或增发款（对应600***）'
+  '741' :
+    name : '申购或增发配号（对应600***）'
+  '742' :
+    name : '配股 (对应603***)'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '743' :
+    name : '可转债发债款（对应600***）'
+  '744' :
+    name : '可转债配号（对应600***）'
+  '745' :
+    name : '基金申购款'
+  '746' :
+    name : '基金申购配号'
+  '751' :
+    name : '751000-751199用于国债分销，751900-751969用于地方政府债（对应130***）分销，751970-751999用于公司债及国家发改委等核准发行的、登记在证券账户的债券（对应122***）分销 ，为面向合格投资者公开发行公司债券网上分销业务分配751850-751899代码段，为地方政府债券网上分销分配751400-751599代码段'
+    url :
+      - 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986127.shtml'
+      - 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20161103_4198650.shtml'
+  '752' :
+    name : '网络投票（对应603***）'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '753' :
+    name : '持股配债（对应603***）'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '754' :
+    name : '可转债申购（对应603***）'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '755' :
+    name : '可转债发债款（对应603***）'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '756' :
+    name : '可转债配号（对应603***）'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986117.shtml'
+  '758' :
+    name : '可交换公司债券网上发行配号'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170717_4344722.shtml'
+  '759' :
+    name : '可交换公司债券网上发行申购'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20170717_4344722.shtml'
+  '760' :
+    name : '配股（对应601***）'
+  '762' :
+    name : '职工股配股（对应601***）'
+  '770' :
+    name : '公开发行优先股申购'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '771' :
+    name : '公开发行优先股配股/配售'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '772' :
+    name : '公开发行优先股申购款'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '773' :
+    name : '公开发行优先股申购配号'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
+  '780' :
+    name : '申购、增发（对应601***）'
+  '781' :
+    name : '持股增发（对应601***）'
+  '783' :
+    name : '可转债申购（对应601***）'
+  '788' :
+    name : '网络投票（对应601***）'
+  '790' :
+    name : '申购款或增发款（对应601***）'
+  '791' :
+    name : '申购或增发配号（对应601***）'
+  '793' :
+    name : '可转债申购款（对应601***）'
+  '794' :
+    name : '可转债配号（对应601***）'
+  '799' :
+    name : '指定交易（含指定交易、撤销指定、回购指定撤销、A股密码服务等）'
+
+  '900' :
+    name : 'B股证券'
+  '938' :
+    name : '网上投票(B股)'
+  '939' :
+    name : 'B股网络投票密码服务（现仅用939988）'
