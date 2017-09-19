@@ -26,6 +26,7 @@ setup(
             'six',
             'pytz',
             'PyYAML',
+            'enum34',
     ],
     entry_points={
           'console_scripts': [
