@@ -4,14 +4,14 @@ Py Security Code
 获取股票代码对应的详细信息
 
 
-Installation
+安装（Installation）
 ---
 
 ```
 pip install py-security-code
 ```
 
-Usage
+使用说明（Usage）
 ---
 
 导入
@@ -46,6 +46,15 @@ Out[11]: True
 In [12]: ShenZhenStockExchange.has_tag('000001', SecurityTags.INDEX)
 Out[12]: False
 ```
+
+提交PR
+----
+
+非常欢迎提交PR给本仓库，本仓库需要如下几方面的帮助：
+
+1. 针对后续各个交易所的公告信息，修正和追加新的信息到  sse.yml , szse.yml 等文件
+1. 追加标签，目前针对 xxx(1to3)级别的信息，会对代码段进行打标签，由于我本人不是金融专业，所以很多标签没有整理，建议增加更丰富的标签。
+1. 提供更多的市场(尤其是数字编号的市场)支持，如港交所等... 
 
 
 
