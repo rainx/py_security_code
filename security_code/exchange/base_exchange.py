@@ -1,6 +1,7 @@
 #coding: utf-8
 import pytz
 import datetime
+import six
 from collections import namedtuple
 
 
@@ -62,7 +63,7 @@ class BaseExchange(object):
         if entry is not None:
             if ('tags' in entry) and type(entry['tags']) is list:
                 for one in entry['tags']:
-                    if tag == one:
+                    if (six.PY2 and one == str(tag)) or (not six.PY2 and tag == one):
                         return True
 
         return False

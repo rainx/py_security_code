@@ -18,9 +18,16 @@ class SecurityTags(IntEnum):
         else:
             return super(SecurityTags, self).__eq__(other)
 
+    def __str__(self):
+        if six.PY2:
+            return self.name.lower()
+        else:
+            return super(SecurityTags, self).__str__()
+
+
     # base type , use area < 100
 
-    BASE = 0 # NEVER USE THIS
+    BASE = 0  # NEVER USE THIS
     STOCK = 1
     INDEX = 2
     FUND = 3
@@ -49,6 +56,7 @@ if __name__ == '__main__':
     print(SecurityTags.FUND.name)
     print(SecurityTags.FUND.value)
 
+    print (type(SecurityTags))
     print(SecurityTags.A_SHARE == SecurityTags.A_SHARE)
     print(SecurityTags.A_SHARE == "a_share")
     print(SecurityTags.A_SHARE == b"A_Share")

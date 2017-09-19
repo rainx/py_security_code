@@ -3,11 +3,11 @@
 from setuptools import setup, find_packages
 import os
 
-# try:
-#     import pypandoc
-#     long_description = pypandoc.convert('README.md', 'rst')
-# except (IOError, ImportError):
-#     long_description = ''
+try:
+    import pypandoc
+    long_description = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    long_description = ''
 
 
 
@@ -15,6 +15,7 @@ setup(
     name='py-security-code',
     version='0.1',
     description='Security Code(equtity, option, bond etc..) of all Exchanges',
+    long_description=long_description,
     author='RainX<Jing Xu>',
     author_email='i@rainx.cc',
     url='https://github.com/rainx/py_security_code',
