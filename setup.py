@@ -21,8 +21,8 @@ setup(
     url='https://github.com/rainx/py_security_code',
     packages=find_packages(),
     install_requires=[
-            'click',
-            'pandas',
+            #'click',
+            #'pandas',
             'six',
             'pytz',
             'PyYAML',
