@@ -6,6 +6,21 @@ from collections import namedtuple
 
 LunchTimeRange = namedtuple('LunchTimeRange', ['start', 'end'])
 
+def parse_code_range_to_dict(data, str_length):
+    new_data = {}
+    for k,v in data.items():
+        if ':' in k:
+            b, e = k.split(":")
+            keys = [("{:0" + str(str_length) + "d}").format(e) for e in range(int(b), int(e)+1)]
+            # print(b, e, keys)
+            for key in keys:
+                new_data[key] = v
+        else:
+            new_data[k] = v
+
+    return new_data
+
+
 class BaseExchange(object):
 
     # some abs static property to override
@@ -36,3 +51,18 @@ class BaseExchange(object):
         # all dynamic properties
         self.market_cap = None
         self.monthly_trade_volume = None
+
+    @classmethod
+    def get_xxx_type_by_code(cls, code):
+        pass
+
+    @classmethod
+    def has_tag(cls, code, tag):
+        entry = cls.get_xxx_type_by_code(code)
+        if entry is not None:
+            if ('tags' in entry) and type(entry['tags']) is list:
+                for one in entry['tags']:
+                    if tag == one:
+                        return True
+
+        return False

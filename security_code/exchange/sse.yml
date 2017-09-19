@@ -36,6 +36,8 @@ digit_1 :
 digit_1to3 :
   '000' :
     name : '上证指数、沪深300指数、中证指数'
+    tags:
+      - index
   '009' :
     name : '国债(2000年前发行)'
   '010' :
@@ -211,12 +213,20 @@ digit_1to3 :
 
   '600' :
     name : 'A股证券'
+    tags:
+      - a_share
+      - stock
   '603' :
     name : 'A股证券'
     url : 'http://www.sse.com.cn/disclosure/announcement/general/c/c_20150910_3979056.shtml'
+    tags:
+      - a_share
+      - stock
   '610' :
     name : 'A股证券'
-
+    tags:
+      - a_share
+      - stock
   '700' :
     name : '配股（对应600***）'
   '702' :
@@ -324,6 +334,9 @@ digit_1to3 :
 
   '900' :
     name : 'B股证券'
+    tags:
+      - b_sahre
+      - stock
   '938' :
     name : '网上投票(B股)'
   '939' :
