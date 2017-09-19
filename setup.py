@@ -12,7 +12,7 @@ import os
 
 
 setup(
-    name='py_security_code',
+    name='py-security-code',
     version='0.1',
     description='Security Code(equtity, option, bond etc..) of all Exchanges',
     author='RainX<Jing Xu>',
