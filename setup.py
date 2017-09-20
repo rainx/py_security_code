@@ -13,7 +13,7 @@ except (IOError, ImportError):
 
 setup(
     name='py-security-code',
-    version='0.2',
+    version='0.3',
     description='Security Code(equtity, option, bond etc..) of all Exchanges',
     long_description=long_description,
     author='RainX<Jing Xu>',
@@ -28,6 +28,9 @@ setup(
             'PyYAML',
             'enum34',
     ],
+    package_data={
+        '': ['*.yml'],
+    },
     entry_points={
           'console_scripts': [
           ]
