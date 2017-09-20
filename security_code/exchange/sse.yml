@@ -40,12 +40,20 @@ digit_1to3 :
       - index
   '009' :
     name : '国债(2000年前发行)'
+    tags:
+      - bond
   '010' :
     name : '国债（2000年-2009年发行）'
+    tags:
+      - bond
   '019' :
     name : '固定收益电子平台交易国债'
+    tags:
+      - bond
   '020' :
     name : '记账式贴现国债'
+    tags:
+      - bond
   '090' :
     name : '新国债质押式回购质押券出入库（对应010***国债）'
   '099' :
@@ -53,6 +61,8 @@ digit_1to3 :
 
   '100' :
     name : '可转债（对应600***)，其中1009**用于转债回售'
+    tags:
+      - bond
   '102' :
     name : '公司债券质押券出入库'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986121.shtml'
@@ -69,39 +79,66 @@ digit_1to3 :
     name : '记账式贴现国债出入库（对应020***)'
   '110' :
     name : '可转债（对应600***)'
+    tags:
+      - bond
+
   '112' :
     name : '可转债（对应600***)'
+    tags:
+      - bond
   '113' :
     name : '可转债（对应601***)'
+    tags:
+      - bond
   '120' :
     name : '企业债'
+    tags:
+      - bond
   '121' :
     name : '资产证券化'
+    tags:
+      - bond
   '122' :
     name : '122000-122499用于公司债，122500-122999用于国家发改委等核准发行的、登记在证券账户的债券'
+    tags:
+      - bond
   '123' :
     name : '公司债券'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986115.shtmls'
+    tags:
+      - bond
   '124' :
     name : '公司债券'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986116.shtml'
+    tags:
+      - bond
   '125' :
     name : '中小企业私募债券'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986119.shtml'
+    tags:
+      - bond
   '126' :
     name : '分离交易的可转换公司债'
+    tags:
+      - bond
   '127' :
     name : '公司债券'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986121.shtml'
+    tags:
+      - bond
   '128' :
-    name : '可交换公司债'
+    name : '可交换公司债, 信贷资产支持'
+    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986120.shtml'
+    tags:
+      - bond
   '129' :
     name : '企业债'
-  '128' :
-    name : '信贷资产支持'
-    url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986120.shtml'
+    tags:
+      - bond
   '130' :
     name : '地方政府债'
+    tags:
+      - bond
   '131' :
     name : '资产支持证券挂牌转让'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20160115_4036449.shtml'
@@ -166,17 +203,29 @@ digit_1to3 :
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986125.shtml'
   '201' :
     name : '国债回购（席位托管方式）'
+    tags:
+      - bond
   '202' :
     name : '企业债回购'
+    tags:
+      - bond
   '203' :
     name : '国债买断式回购'
+    tags:
+      - bond
   '204' :
     name : '债券质押式回购（账户托管方式）'
+    tags:
+      - bond
   '205' :
     name : '债券质押式报价回购'
+    tags:
+      - bond
   '206' :
     name : '债券质押式协议回购交易'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986126.shtml'
+    tags:
+      - bond
 
   '310' :
     name : '国债期货（暂停交易）'
@@ -188,28 +237,50 @@ digit_1to3 :
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986122.shtml'
   '500' :
     name : '契约型封闭式基金'
+    tags:
+      - fund
   '501' :
     name : '上市开放式基金'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986128.shtml'
+    tags:
+      - fund
   '510' :
     name : '交易型开放式指数证券投资基金'
+    tags:
+      - fund
   '511' :
     name : '交易型货币市场基金、债券ETF等上市交易的固定收益类基金产品'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986118.shtml'
+    tags:
+      - fund
   '519' :
     name : '开放式基金申赎'
+    tags:
+      - fund
   '521' :
     name : '开放式基金认购'
+    tags:
+      - fund
   '522' :
     name : '开放式基金跨市场转托管'
+    tags:
+      - fund
   '523' :
     name : '开放式基金分红'
+    tags:
+      - fund
   '524' :
     name : '开放式基金基金转换'
+    tags:
+      - fund
   '580' :
     name : '权证(含股改权证、公司权证)'
+    tags:
+      - warrant
   '582' :
     name : '权证行权'
+    tags:
+      - warrant
 
   '600' :
     name : 'A股证券'

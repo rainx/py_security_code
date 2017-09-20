@@ -35,6 +35,7 @@ class SecurityTags(IntEnum):
     OPTION = 5
     BOND = 6
     PREFERRED_STOCK = 7
+    WARRANT=8
 
     # extends type
 
