@@ -7,6 +7,11 @@ Py Security Code
 安装（Installation）
 ---
 
+
+```python
+pip install http+git@github.com:rainx/py_security_code.git
+```
+or 
 ```
 pip install py-security-code
 ```
