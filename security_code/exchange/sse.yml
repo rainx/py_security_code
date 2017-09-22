@@ -244,6 +244,16 @@ digit_1to3 :
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986128.shtml'
     tags:
       - fund
+  '502' :
+    name : '上基分级'
+    # 来源未知
+    tags:
+      - fund
+  '505' :
+    name : '目前已知嘉实元和505888，但是暂时不清楚这个代码段更进一步说明'
+    url : 'http://fund.eastmoney.com/f10/jbgk_505888.html'
+    tags:
+      - fund
   '510' :
     name : '交易型开放式指数证券投资基金'
     tags:
@@ -251,6 +261,16 @@ digit_1to3 :
   '511' :
     name : '交易型货币市场基金、债券ETF等上市交易的固定收益类基金产品'
     url : 'http://www.sse.com.cn/lawandrules/guide/jyznlc/dealcode/c/c_20150912_3986118.shtml'
+    tags:
+      - fund
+  '512' :
+    name : '上基etf'
+    # 来源未知
+    tags:
+      - fund
+  '518' :
+    name : '上基黄金类ETF'
+    # 来源未知
     tags:
       - fund
   '519' :

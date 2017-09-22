@@ -49,7 +49,7 @@ class SecurityTags(IntEnum):
     # 基金
 
     ETF = FUND * 100 + 1
-    LOF = FUND * 200 + 2
+    LOF = FUND * 100 + 2
 
 
 if __name__ == '__main__':
