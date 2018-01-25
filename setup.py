@@ -13,7 +13,7 @@ except (IOError, ImportError):
 
 setup(
     name='py-security-code',
-    version='0.4',
+    version='0.5',
     description='Security Code(equtity, option, bond etc..) of all Exchanges',
     long_description=long_description,
     author='RainX<Jing Xu>',

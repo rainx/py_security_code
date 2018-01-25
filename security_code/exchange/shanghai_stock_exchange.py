@@ -9,8 +9,9 @@ import yaml
 import six
 
 sse_content = None
-with open(os.path.join(os.path.dirname(__file__), "sse.yml")) as yaml_file:
-    sse_content = yaml.load(yaml_file.read())
+with open(os.path.join(os.path.dirname(__file__), "sse.yml"), 'rb') as yaml_file:
+    content = yaml_file.read()
+    sse_content = yaml.load(content.decode('utf-8'))
 
 if sse_content is None:
     raise Exception("can not find sse.yaml")

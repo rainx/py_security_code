@@ -10,8 +10,9 @@ from security_code.exchange.exceptions import InvalidCodeException
 
 
 szse_content = None
-with open(os.path.join(os.path.dirname(__file__), "szse.yml")) as yaml_file:
-    szse_content = yaml.load(yaml_file.read())
+with open(os.path.join(os.path.dirname(__file__), "szse.yml"), 'rb') as yaml_file:
+    content = yaml_file.read()
+    szse_content = yaml.load(content.decode('utf-8'))
 
 if szse_content is None:
     raise Exception("can not find szse.yaml")
